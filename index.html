@@ -172,7 +172,7 @@
 							<div class="icon-box">
 								<div class="text-center">
                   <h2>Total Claimed Rewards</h2>
-                  <div id="totalClaimed">0 BNB</div>
+                  <div id="totalClaimed">0 CAKE</div>
                 </div>
 							</div>
 						</div>
@@ -180,7 +180,7 @@
 							<div class="icon-box">
 								<div class="text-center">
                   <h2>Total Unclaimed Rewards</h2>
-                  <div id="balance">0 BNB</div>
+                  <div id="balance">0 CAKE</div>
                 </div>
 							</div>
 						</div>
@@ -188,9 +188,9 @@
 							<div class="icon-box">
 								<div class="text-center">
                   <h2>Your Claimed Rewards</h2>
-                  <div id="claimed">0 BNB</div>
+                  <div id="claimed">0 CAKE</div>
                   <h2>You Can Claim</h2>
-                  <div id="claimable">0 BNB</div>
+                  <div id="claimable">0 CAKE</div>
                   <a href="#test" id="claim" class="btn-get-started scrollto" onclick="fclaim();">Claim Reward</a>
                   <div id="claimResult"></div>
                 </div>
@@ -353,7 +353,7 @@
 								</div>
 								<h4 class="title">
 									<a href="">
-										<span>Improved</span> BNB Reward System
+										<span>Improved</span> CAKE Reward System
 									</a>
 								</h4>
 								<p class="description">Reward Systems are also
@@ -361,7 +361,7 @@
 								</p>
 								<p class="description">
 									<span>3%</span> of every sell will be changed to 
-									BNB reward
+									CAKE reward
 								</p>
                 <p class="description">
 									<span>No need</span> to claim in every cycle.
@@ -626,7 +626,7 @@ And 'all of them in a single token' itself can be a another unique concept.
 									<i class="ri-stack-line"></i>
 								</div>
 								<h4 class="title">
-									<a href="https://pancakeswap.finance/swap?outputCurrency=0x64a51d02d7288d2d207b3b055a8ed16503e57fe6" target="_blank">Pancakeswap (Ready)</a>
+									<a href="https://crypto-booster.github.io/upvotes.html">Upvote (Ready)</a>
 								</h4>
 								<p class="description">Fully Fair &amp; Transparent Reward</p>
 								<p class="description">Details will be revealed at <span>1K Holders</span></p>
@@ -638,7 +638,7 @@ And 'all of them in a single token' itself can be a another unique concept.
 									<i class="ri-palette-line"></i>
 								</div>
 								<h4 class="title">
-									<a href="https://poocoin.app/tokens/0x64a51d02d7288d2d207b3b055a8ed16503e57fe6" target="_blank">Infinite Pump (Ready)</a>
+									<a href="https://crypto-booster.github.io/token-generator.html">Token Generator (Ready)</a>
 								</h4>
 								<p class="description">Fully Fair &amp; Transparent Auto Pump System</p>
 								<p class="description">Team only buy at the start only if trigger is needed</p>
@@ -653,9 +653,9 @@ And 'all of them in a single token' itself can be a another unique concept.
 									<i class="ri-command-line"></i>
 								</div>
 								<h4 class="title">
-									<a href="https://t.me/cryptoboosterglobal" target="_blank">Telegram Community (Ready)</a>
+									<a href="https://crypto-booster.github.io/socials-booster.html">Socials Booster (Ready)</a>
 								</h4>
-								<p class="description">BNB price Direction Prediction</p>
+								<p class="description">CAKE price Direction Prediction</p>
 								<p class="description">Seize the Prize by betting Up &amp; Down</p>
 								<p class="description">Details will be revealed at <span>3K Holders</span></p>
 							</div>
@@ -932,7 +932,7 @@ Thank you :)</p>
           "type": "address"
         }
       ],
-      "name": "calBNB",
+      "name": "calCAKE",
       "outputs": [
         {
           "internalType": "uint256",
@@ -945,7 +945,7 @@ Thank you :)</p>
     },
     {
       "inputs": [],
-      "name": "claimBNB",
+      "name": "claimCAKE",
       "outputs": [
         {
           "internalType": "uint256",
@@ -964,7 +964,7 @@ Thank you :)</p>
           "type": "address"
         }
       ],
-      "name": "claimedBNB",
+      "name": "claimedCAKE",
       "outputs": [
         {
           "internalType": "uint256",
@@ -987,16 +987,16 @@ Thank you :)</p>
     getNetwork();
     
     
-    document.getElementById("totalClaimed").innerHTML = '0' + ' BNB';
+    document.getElementById("totalClaimed").innerHTML = '0' + ' CAKE';
     if (network.chainId == 56) {
       console.log('testnet');
       const cAdr = '0x3f4d6bf08cb7a003488ef082102c2e6418a4551e';
       const c = new ethers.Contract(cAdr, abi, provider);
       let balance;
       balanceOf(cAdr);
-      document.getElementById("balance").innerHTML = ethers.utils.formatEther(balance) + ' BNB';      
+      document.getElementById("balance").innerHTML = ethers.utils.formatEther(balance) + ' CAKE';      
     } else {
-      document.getElementById("balance").innerHTML = 'xx' + ' BNB';
+      document.getElementById("balance").innerHTML = 'xx' + ' CAKE';
     }
 	} else {
 		console.log('Please install MetaMask!');
@@ -1033,10 +1033,10 @@ Thank you :)</p>
       currentAccount = accounts[0];
       document.getElementById('connectResult').innerHTML = currentAccount;
       <!-- c.methods.getClaimed(walletAdr).call().then(function (result) { -->
-        document.getElementById('claimed').innerHTML = 'yy' + ' BNB';
+        document.getElementById('claimed').innerHTML = 'yy' + ' CAKE';
       <!-- }); -->
       <!-- c.methods.getClaimable(walletAdr).call().then(function (result) { -->
-        document.getElementById('claimable').innerHTML = 'zz' + ' BNB';
+        document.getElementById('claimable').innerHTML = 'zz' + ' CAKE';
       <!-- }); -->
 
     }
@@ -1061,8 +1061,8 @@ Thank you :)</p>
 	function fclaim() {
 		console.log('claim')
 		<!-- c.methods.claim().call().then(function (result) { -->
-			<!-- const rewardBNB = web3.utils.fromWei(result, "ether"); -->
-			<!-- document.getElementById('claimResult').innerHTML = rewardBNB + ' BNB claimed!'; -->
+			<!-- const rewardCAKE = web3.utils.fromWei(result, "ether"); -->
+			<!-- document.getElementById('claimResult').innerHTML = rewardCAKE + ' CAKE claimed!'; -->
 		<!-- }); -->
 	}
 </script>
