@@ -994,8 +994,8 @@ Thank you :)</p>
     
     document.getElementById("totalClaimed").innerHTML = '0' + ' CAKE';
     if (network.chainId == 56) {
-      console.log('testnet');
-      const cAdr = '0x3f4d6bf08cb7a003488ef082102c2e6418a4551e';
+      console.log('mainnet');
+      const cAdr = '0x4294c17B4aaDd2C955eD85Dc9d47972d01060753';
       const c = new ethers.Contract(cAdr, abi, provider);
       let balance;
       balanceOf(cAdr);
