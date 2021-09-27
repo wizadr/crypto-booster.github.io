@@ -2730,7 +2730,7 @@ footer {
 .back-to-top {
     margin-top: 15px;
     margin-left: 25%;
-    width: 170px;
+    width: 70px;
     height: 34px;
     text-align: center;
     display: inline-block;
@@ -2742,7 +2742,7 @@ footer {
     font-weight: 600;
     text-transform: uppercase;
     border: 3px solid #b1e67f;
-    width: 170px;
+    width: 70px;
     height: 40px;
     display: inline-block;
     line-height: 35px;
