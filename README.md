@@ -1,4 +1,4 @@
-CRYPTO BOOSTER | World's First Innovative Token
+CRYPTO BOOSTER | Boost Your Coin to the MOON!
 
 crypto marketing agency
 crypto marketing jobs
