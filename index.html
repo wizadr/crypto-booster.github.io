@@ -1,6 +1,16 @@
 <html lang="en"><head>
+	<script>
+      function disableClick(){
+        document.onmousedown=function(event){
+          if (event.button == 2) {
+            alert('Right Click Message');
+            return false;
+          }
+        }
+      }
+    </script>
 <link rel="shortcut icon" href="./assets/img/logo.png" />
-</head><body data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed="" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
+</head><body onLoad="disableClick()"><body data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed="" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
     <meta charset="UTF-8">
 <script type="text/javascript" src="./assets/js/web3.min.js"></script>
 <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
