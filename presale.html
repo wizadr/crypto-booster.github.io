@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Token sale page">
 
-<title>CRYPTO BOOSTER PRESALE</title>
+<title>CRYPTO BOOSTER PRESALE ROUND 1</title>
 
 <script>
 var test = false; // False if contracts are on Mainnet
@@ -96,7 +96,17 @@ border:1px solid;
 max-width: 100%;
 }
 </style>
-
+<script>
+      function disableClick(){
+        document.onmousedown=function(event){
+          if (event.button == 2) {
+            alert('Right Click Message');
+            return false;
+          }
+        }
+      }
+    </script>
+<link rel="shortcut icon" href="./assets/img/logo.png" />
 </head>
 
 <body>
@@ -109,7 +119,7 @@ max-width: 100%;
 </div>
 
 <div style="text-align: center">
-<h1>Token Info</h1>
+<h1>Presale Round 1</h1>
 <h2><span id="tokenName">Crypto Booster</span> (<span class="tokenSymbol">CRYPTOBOOSTER</span>)</h2>
 <p><a target="_blank" href="https://bscscan.com/token/0x64a51d02D7288d2D207B3b055A8eD16503e57fe6" id="tokenAddress">0x64a51d02D7288d2D207B3b055A8eD16503e57fe6</a></p>
 <!-- Reserved in case you want to show decimals and total supply: Decimals <span id="#tokenDecimals"></span> Total supply <span id="#tokenSupply"></span>-->
@@ -186,7 +196,7 @@ can spend max. <span id="myRemaining">?</span> BNB more</p>
 <hr>
 
 <div id="refarea" style="text-align: center">
-<h1>Referral program</h1>
+<h1>Refer and Earn</h1>
 <p>Share your referral link and get paid instantly to your wallet for every referred token purchase.</p>
 <p>Total paid to referrers: <span id="refTotal"></span> BNB</p>
 <p>Referral commission: <span id="refPercent">10</span>%</p>
